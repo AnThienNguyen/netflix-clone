@@ -2,6 +2,7 @@
 	color: white;
 	object-fit: contain;
 	height: 450px;
+	margin-bottom: 5px;
 }
 
 .banner__contents {

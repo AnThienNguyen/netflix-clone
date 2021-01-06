@@ -25,7 +25,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     }, [fetchUrl]);
 
-    console.log(movies);
+    //console.log(movies);
 
     const opts = {
         height: "380",
@@ -53,6 +53,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             
             setCurrentMovie(movie);
         }
+        console.log(movie);
         /*movieTrailer(movie?.name || movie?.title || "")
             .then((url) => {
                 const urlParams = new URLSearchParams(new URL(url).search);
@@ -76,10 +77,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
                     <img 
                         key={movie.id}
                         onClick={() => handleClick(movie)}
-                        className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                        className={`row__poster ${isLargeRow && "row__posterLarge"} ${movie === currentMovie && "row__current"}`}
                         src={`${base_url}${isLargeRow ? movie.poster_path : 
                             (movie.backdrop_path ? movie.backdrop_path : movie.poster_path)}`} 
                         alt={movie.name} />
+
                 ))}
             </div>
             {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
