@@ -4,7 +4,7 @@ This is a Netflix clone built with React. It uses the TMDB API to pull informati
 
 Checkout the [Live Demo](https://netflix-clone-an.web.app/)
 
-![Homepage](images/home.JPG)
+![Homepage](images/demo.gif)
 
 ## Getting Started
 
