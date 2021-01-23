@@ -1,6 +1,6 @@
 # Netflix Clone
 
-This is a Netflix clone built with React. It uses the TMDB API to pull information about current movies in multiple genres. The movie-trailer package is used to search for trailers on youtube. 
+This Netflix inspired clone is built with React and Firebase. It uses the TMDB API to pull information about current movies in multiple genres. The movie-trailer package is used to search for trailers on youtube. 
 
 Checkout the [Live Demo](https://netflix-clone-an.web.app/)
 
@@ -35,5 +35,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * [React JS](https://reactjs.org/)
 * [Firebase](https://firebase.google.com/)
-* [Stripe](https://stripe.com/)
+* [TMDB-API](https://developers.themoviedb.org/4/getting-started/authorization)
+* [movie-trailer](https://www.npmjs.com/package/movie-trailer)
 * [Material-UI](https://material-ui.com/)
